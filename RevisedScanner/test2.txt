@@ -1,0 +1,11 @@
+PROGRAM STATS
+VAR
+	ACCOUNT, PAYCHECK, SUM : INTEGER
+BEGIN
+	(* testing comment mode 
+		Multi line*)
+	ACCOUNT := 100;
+	PAYCHECK := 400;
+	SUM := ACCOUNT + PAYCHECK;
+	WRITE(SUM)
+END.

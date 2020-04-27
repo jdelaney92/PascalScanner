@@ -1,0 +1,14 @@
+PROGRAM TEST
+VAR
+	COUNT, VALUE, RATIO, VARIANCE, I : INTEGER
+BEGIN
+	COUNT := 0; (*  test after stmt *)
+	RATIO := 2;
+	FOR I := 1 TO 100 DO
+		BEGIN
+(* test before stmt *)  COUNT := COUNT + 1
+		END;
+	VALUE := COUNT * RATIO;
+	VARIANCE := VALUE - COUNT;
+	WRITE(VALUE,VARIANCE)
+END.
